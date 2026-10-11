@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useSession, signOut } from "@/lib/auth-client";
@@ -22,6 +22,11 @@ export default function Navbar() {
   const pathname = usePathname();
   const { data: session } = useSession();
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [currentDate, setCurrentDate] = useState<string>("");
+
+  useEffect(() => {
+    setCurrentDate(getBanglaDate(new Date()));
+  }, []);
 
   const handleLogout = async () => {
     try {
@@ -37,17 +42,19 @@ export default function Navbar() {
     <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-[#007a3d] rounded-xl flex items-center justify-center text-white shadow-sm">
-            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-              <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
-            </svg>
+          <div className="w-10 h-10 bg-[#007a3d] rounded-xl flex items-center justify-center p-2 shadow-sm">
+            <img
+              src="/logo-icon.png"
+              alt="BazarDor Logo"
+              className="w-full h-full object-contain filter invert brightness-0"
+            />
           </div>
           <div>
             <span className="text-xl font-bold text-gray-900 block leading-tight">
               বাজার দর
             </span>
-            <span className="text-[11px] text-gray-500 font-medium">
-              {getBanglaDate()}
+            <span className="text-[11px] text-gray-500 font-medium min-h-[16px] block">
+              {currentDate || "..."}
             </span>
           </div>
         </Link>
@@ -123,18 +130,18 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className="border-t border-gray-100 py-2.5">
-        <div className="max-w-7xl mx-auto px-4 flex justify-center items-center gap-3 sm:gap-6 overflow-x-auto text-xs sm:text-sm font-medium">
+      <div className="border-t border-gray-100 py-3 bg-white">
+        <div className="max-w-7xl mx-auto px-4 flex justify-center items-center gap-2.5 overflow-x-auto text-xs sm:text-sm font-medium">
           {categories.map((cat) => {
             const isActive = pathname === `/category/${cat.slug}`;
             return (
               <Link
                 key={cat.slug}
                 href={`/category/${cat.slug}`}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full transition-all whitespace-nowrap ${
+                className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border transition-all whitespace-nowrap text-xs font-semibold ${
                   isActive
-                    ? "bg-[#007a3d] text-white font-semibold shadow-sm"
-                    : "text-gray-600 hover:text-gray-900 hover:bg-gray-100/60"
+                    ? "bg-[#007a3d] text-white border-[#007a3d] shadow-sm"
+                    : "bg-white text-gray-700 border-gray-200 hover:border-gray-300 hover:bg-gray-50"
                 }`}
               >
                 <span>{cat.emoji}</span>

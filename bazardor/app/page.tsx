@@ -1,6 +1,6 @@
 import products from "@/data/products.json";
 import ProductCard from "@/components/ProductCard";
-import { getBanglaDate } from "@/lib/bangla-utils";
+import LiveDateBadge from "@/components/LiveDateBadge";
 
 export default function HomePage() {
   const risers = [...products]
@@ -15,13 +15,10 @@ export default function HomePage() {
 
   return (
     <div className="space-y-12 max-w-7xl mx-auto px-4 sm:px-6">
-      {/* 2. Hero / Banner matching Figma */}
       <section className="bg-[#e9f4eb] rounded-3xl p-8 sm:p-12 border border-[#d6ecda] relative overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
           <div className="md:col-span-8 space-y-4">
-            <span className="inline-block bg-[#d2eada] text-[#007a3d] text-xs font-semibold px-3 py-1 rounded-full">
-              {getBanglaDate()}
-            </span>
+            <LiveDateBadge />
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight">
               আজকের বাজারের দাম এক নজরে
             </h1>
@@ -39,15 +36,16 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="md:col-span-4 flex justify-center">
-            <div className="w-56 h-56 flex items-center justify-center text-8xl select-none filter drop-shadow-md">
-              🧺
-            </div>
+          <div className="md:col-span-4 flex justify-center items-center">
+            <img
+              src="/bazar-hero.png"
+              alt="বাজার দর হিরো চিত্র"
+              className="w-64 sm:w-72 h-auto object-contain drop-shadow-md select-none"
+            />
           </div>
         </div>
       </section>
 
-      {/* 3. Section A — “আজ দাম বেড়েছে ▲” */}
       <section>
         <div className="flex items-center gap-2 mb-4">
           <span className="text-red-600 text-sm">▲</span>
@@ -60,7 +58,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3. Section B — “আজ দাম কমেছে ▼” */}
       <section>
         <div className="flex items-center gap-2 mb-4">
           <span className="text-emerald-700 text-sm">▼</span>
@@ -73,7 +70,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3. Section C — “সব পণ্য” */}
       <section id="সব-পণ্য" className="scroll-mt-24">
         <div className="mb-4">
           <h2 className="text-lg font-black text-gray-900">সব পণ্য</h2>
