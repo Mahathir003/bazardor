@@ -1,6 +1,18 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+body {
+  background-color: #f4f6f4;
+  color: #1a1a1a;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(0%);
@@ -11,7 +23,7 @@
 }
 
 .animate-marquee {
-  animation: marquee 28s linear infinite;
+  animation: marquee 30s linear infinite;
 }
 
 html {

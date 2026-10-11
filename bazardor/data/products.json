@@ -1,0 +1,465 @@
+[
+  {
+    "id": "1",
+    "name": "স্বর্ণমাছি চাল",
+    "slug": "shwarnamachi-chal",
+    "category": "চাল",
+    "categorySlug": "chal",
+    "emoji": "🍚",
+    "unit": "প্রতি কেজি",
+    "currentPrice": 54,
+    "prevPrice": 52,
+    "changePercent": 2.0,
+    "description": "স্বর্ণমাছি চাল - দৈনন্দিন রান্নার জন্য জনপ্রিয় ও সাশ্রয়ী চাল।",
+    "markets": [
+      {
+        "bazar": "কারওয়ান বাজার",
+        "division": "ঢাকা",
+        "min": 52,
+        "max": 55,
+        "avg": 54
+      },
+      {
+        "bazar": "সদর বাজার",
+        "division": "রাজশাহী",
+        "min": 50,
+        "max": 53,
+        "avg": 52
+      },
+      {
+        "bazar": "আম্বরখানা",
+        "division": "সিলেট",
+        "min": 53,
+        "max": 56,
+        "avg": 55
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "মিনিকেট চাল",
+    "slug": "miniket-chal",
+    "category": "চাল",
+    "categorySlug": "chal",
+    "emoji": "🍚",
+    "unit": "প্রতি কেজি",
+    "currentPrice": 69,
+    "prevPrice": 71,
+    "changePercent": -2.9,
+    "description": "সরু ও পরিষ্কার মিনিকেট চাল, দৈনন্দিন ব্যবহারের জন্য সেরা।",
+    "markets": [
+      {
+        "bazar": "কারওয়ান বাজার",
+        "division": "ঢাকা",
+        "min": 68,
+        "max": 71,
+        "avg": 69
+      },
+      {
+        "bazar": "মিরপুর-১ বাজার",
+        "division": "ঢাকা",
+        "min": 69,
+        "max": 72,
+        "avg": 70
+      },
+      {
+        "bazar": "চকবাজার",
+        "division": "চট্টগ্রাম",
+        "min": 67,
+        "max": 70,
+        "avg": 68.5
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "বাটাম সাইজ চাল",
+    "slug": "batam-size-chal",
+    "category": "চাল",
+    "categorySlug": "chal",
+    "emoji": "🍚",
+    "unit": "প্রতি কেজি",
+    "currentPrice": 66,
+    "prevPrice": 64,
+    "changePercent": 3.1,
+    "description": "বাটাম সাইজ চাল - গতকালের তুলনায় আজ দাম বেড়েছে ২ টাকা।",
+    "markets": [
+      {
+        "bazar": "ঘাট বাজার",
+        "division": "ময়মনসিংহ",
+        "min": 59,
+        "max": 65,
+        "avg": 62
+      },
+      {
+        "bazar": "সদর বাজার",
+        "division": "রাজশাহী",
+        "min": 60,
+        "max": 66,
+        "avg": 63
+      },
+      {
+        "bazar": "বাজারহাট",
+        "division": "খুলনা",
+        "min": 60,
+        "max": 67,
+        "avg": 63.5
+      },
+      {
+        "bazar": "বাঘারহাট বাজার",
+        "division": "রাজশাহী",
+        "min": 60,
+        "max": 64,
+        "avg": 64
+      },
+      {
+        "bazar": "চৌর বাজার",
+        "division": "ময়মনসিংহ",
+        "min": 60,
+        "max": 69,
+        "avg": 64.5
+      },
+      {
+        "bazar": "আগ্রাবাদ বাজার",
+        "division": "চট্টগ্রাম",
+        "min": 62,
+        "max": 69,
+        "avg": 65
+      },
+      {
+        "bazar": "ডবলমুরিং বাজার",
+        "division": "খুলনা",
+        "min": 62,
+        "max": 69,
+        "avg": 62.5
+      },
+      {
+        "bazar": "চৌরাস্তা বাজার",
+        "division": "সিলেট",
+        "min": 63,
+        "max": 70,
+        "avg": 67
+      },
+      {
+        "bazar": "গ্রীন মার্কেট, মিরপুর",
+        "division": "ঢাকা",
+        "min": 64,
+        "max": 70,
+        "avg": 67.5
+      },
+      {
+        "bazar": "চৌধুরী বাজার",
+        "division": "চট্টগ্রাম",
+        "min": 63,
+        "max": 73,
+        "avg": 68
+      },
+      {
+        "bazar": "আম্বরখানা",
+        "division": "সিলেট",
+        "min": 64,
+        "max": 73,
+        "avg": 68.5
+      },
+      {
+        "bazar": "কারওয়ান বাজার",
+        "division": "ঢাকা",
+        "min": 67,
+        "max": 73,
+        "avg": 69
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "নাজির চাল",
+    "slug": "nazir-chal",
+    "category": "চাল",
+    "categorySlug": "chal",
+    "emoji": "🍚",
+    "unit": "প্রতি কেজি",
+    "currentPrice": 74,
+    "prevPrice": 74,
+    "changePercent": 0.0,
+    "description": "উন্নত মানের পুরাতন নাজিরশাইল চাল।",
+    "markets": [
+      {
+        "bazar": "কারওয়ান বাজার",
+        "division": "ঢাকা",
+        "min": 72,
+        "max": 76,
+        "avg": 74
+      },
+      {
+        "bazar": "যাত্রাবাড়ী",
+        "division": "ঢাকা",
+        "min": 71,
+        "max": 75,
+        "avg": 73.5
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "পেঁয়াজ",
+    "slug": "peyaj",
+    "category": "সবজি",
+    "categorySlug": "sobji",
+    "emoji": "🧅",
+    "unit": "প্রতি কেজি",
+    "currentPrice": 54,
+    "prevPrice": 48,
+    "changePercent": 12.5,
+    "description": "দেশি দেশীয় নতুন পেঁয়াজ।",
+    "markets": [
+      {
+        "bazar": "কারওয়ান বাজার",
+        "division": "ঢাকা",
+        "min": 52,
+        "max": 56,
+        "avg": 54
+      },
+      {
+        "bazar": "শ্যামবাজার",
+        "division": "ঢাকা",
+        "min": 50,
+        "max": 54,
+        "avg": 52
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "আদা",
+    "slug": "ada",
+    "category": "মসলা",
+    "categorySlug": "moshla",
+    "emoji": "🫚",
+    "unit": "প্রতি কেজি",
+    "currentPrice": 85,
+    "prevPrice": 78,
+    "changePercent": 9.0,
+    "description": "তাজা পাহাড়ি দেশি আদা।",
+    "markets": [
+      {
+        "bazar": "কারওয়ান বাজার",
+        "division": "ঢাকা",
+        "min": 82,
+        "max": 88,
+        "avg": 85
+      },
+      {
+        "bazar": "খাতুনগঞ্জ",
+        "division": "চট্টগ্রাম",
+        "min": 80,
+        "max": 86,
+        "avg": 83
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "বেগুন",
+    "slug": "begun",
+    "category": "সবজি",
+    "categorySlug": "sobji",
+    "emoji": "🍆",
+    "unit": "প্রতি কেজি",
+    "currentPrice": 44,
+    "prevPrice": 40,
+    "changePercent": 4.8,
+    "description": "গোল কালো তাজা বেগুন।",
+    "markets": [
+      {
+        "bazar": "কারওয়ান বাজার",
+        "division": "ঢাকা",
+        "min": 42,
+        "max": 46,
+        "avg": 44
+      },
+      {
+        "bazar": "মিরপুর-১",
+        "division": "ঢাকা",
+        "min": 43,
+        "max": 47,
+        "avg": 45
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "রুই মাছ",
+    "slug": "rui-mach",
+    "category": "মাছ",
+    "categorySlug": "mach",
+    "emoji": "🐟",
+    "unit": "প্রতি কেজি",
+    "currentPrice": 46,
+    "prevPrice": 44,
+    "changePercent": 4.5,
+    "description": "তাজা নদীর রুই মাছ।",
+    "markets": [
+      {
+        "bazar": "কারওয়ান বাজার",
+        "division": "ঢাকা",
+        "min": 44,
+        "max": 48,
+        "avg": 46
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "ডিম",
+    "slug": "dim",
+    "category": "ডিম-দুধ",
+    "categorySlug": "dim-dudh",
+    "emoji": "🥚",
+    "unit": "প্রতি ডজন",
+    "currentPrice": 158,
+    "prevPrice": 152,
+    "changePercent": 3.9,
+    "description": "ফার্মের লাল লেয়ার ডিম।",
+    "markets": [
+      {
+        "bazar": "তেজগাঁও আড়ত",
+        "division": "ঢাকা",
+        "min": 154,
+        "max": 160,
+        "avg": 158
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "মাখন (১০০ গ্রাম)",
+    "slug": "makhon",
+    "category": "ডিম-দুধ",
+    "categorySlug": "dim-dudh",
+    "emoji": "🧈",
+    "unit": "প্রতি পিস",
+    "currentPrice": 145,
+    "prevPrice": 140,
+    "changePercent": 3.6,
+    "description": "খাঁটি গাভীর দুধের মাখন।",
+    "markets": [
+      {
+        "bazar": "কারওয়ান বাজার",
+        "division": "ঢাকা",
+        "min": 140,
+        "max": 150,
+        "avg": 145
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "name": "কাঁচামরিচ",
+    "slug": "kachamorich",
+    "category": "সবজি",
+    "categorySlug": "sobji",
+    "emoji": "🌶️",
+    "unit": "প্রতি কেজি",
+    "currentPrice": 92,
+    "prevPrice": 110,
+    "changePercent": -12.4,
+    "description": "দেশি তীক্ষ্ণ ঝালের সবুজ কাঁচামরিচ।",
+    "markets": [
+      {
+        "bazar": "কারওয়ান বাজার",
+        "division": "ঢাকা",
+        "min": 88,
+        "max": 96,
+        "avg": 92
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "name": "রসুন",
+    "slug": "roshun",
+    "category": "সবজি",
+    "categorySlug": "sobji",
+    "emoji": "🧄",
+    "unit": "প্রতি কেজি",
+    "currentPrice": 125,
+    "prevPrice": 138,
+    "changePercent": -7.4,
+    "description": "দেশি শুকনা রসুন।",
+    "markets": [
+      {
+        "bazar": "শ্যামবাজার",
+        "division": "ঢাকা",
+        "min": 120,
+        "max": 130,
+        "avg": 125
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "name": "আলু",
+    "slug": "alu",
+    "category": "সবজি",
+    "categorySlug": "sobji",
+    "emoji": "🥔",
+    "unit": "প্রতি কেজি",
+    "currentPrice": 30,
+    "prevPrice": 32,
+    "changePercent": -6.2,
+    "description": "বগুড়ার নতুন লাল আলু।",
+    "markets": [
+      {
+        "bazar": "কারওয়ান বাজার",
+        "division": "ঢাকা",
+        "min": 28,
+        "max": 32,
+        "avg": 30
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "name": "মসুর ডাল",
+    "slug": "moshur-dal",
+    "category": "ডাল",
+    "categorySlug": "dal",
+    "emoji": "🫘",
+    "unit": "প্রতি কেজি",
+    "currentPrice": 142,
+    "prevPrice": 138,
+    "changePercent": 2.9,
+    "description": "উন্নত মানের দেশি চিকন মসুর ডাল।",
+    "markets": [
+      {
+        "bazar": "মৌলভীবাজার",
+        "division": "ঢাকা",
+        "min": 140,
+        "max": 145,
+        "avg": 142
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "name": "ছোলা",
+    "slug": "chola",
+    "category": "ডাল",
+    "categorySlug": "dal",
+    "emoji": "🫘",
+    "unit": "প্রতি কেজি",
+    "currentPrice": 120,
+    "prevPrice": 124,
+    "changePercent": -2.4,
+    "description": "অস্ট্রেলিয়ান বড় দানার ছোলা।",
+    "markets": [
+      {
+        "bazar": "কারওয়ান বাজার",
+        "division": "ঢাকা",
+        "min": 118,
+        "max": 122,
+        "avg": 120
+      }
+    ]
+  }
+]
