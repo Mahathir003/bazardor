@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# বাজার দর (BazarDor) 🛒
 
-## Getting Started
+নিত্যপ্রয়োজনীয় খাদ্যপণ্যের প্রতিদিনের সঠিক বাজার দর পর্যবেক্ষণ ও তুলনামূলক বিশ্লেষণের একটি আধুনিক ওয়েব প্ল্যাটফর্ম। বাংলাদেশের বিভিন্ন বিভাগের প্রধান প্রধান পাইকারি আড়ত ও খুচরা বাজারের দামের তারতম্য সাধারণ মানুষের কাছে সহজে তুলে ধরাই এর মূল লক্ষ্য।
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ ব্যবহৃত প্রযুক্তিসমূহ (Technologies Used)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **UI Framework:** Next.js (App Router, React 19)
+- **Styling:** Tailwind CSS + DaisyUI
+- **Language:** TypeScript
+- **Authentication:** BetterAuth (Email/Password, Google, GitHub OAuth)
+- **Notifications:** React Hot Toast
+- **Deployment Platform:** Vercel
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 প্রধান ৫টি মূল বৈশিষ্ট্য (5 Key Features)
 
-## Learn More
+1. **লাইভ প্রাইস ট্র্যাকার (Marquee Ticker):**
+   সাইটের শীর্ষে একটি স্বয়ংক্রিয় স্ক্রলিং স্ট্রিপে সার্বক্ষণিক বিভিন্ন পণ্যের একক প্রতি মূল্য এবং আজকের শতকরা পরিবর্তন (▲ বৃদ্ধি / ▼ হ্রাস) রিয়েল-টাইমে প্রদর্শিত হয়।
 
-To learn more about Next.js, take a look at the following resources:
+2. **বাজারভিত্তিক আঞ্চলিক দামের বিশ্লেষণ:**
+   প্রতিটি পণ্যের বিস্তারিত পাতায় (Product Details) গিয়ে কারওয়ান বাজার, শ্যামবাজার, মিরপুর-১, ঘাট বাজার ইত্যাদির সর্বনিম্ন, সর্বাধিক ও গড় মূল্যের তুলনামূলক সারণী ও সারসংক্ষেপ দেখা যায়।
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **গাণিতিক মানভিত্তিক ফিল্টারিং ও সর্টিং (Challenge C1):**
+   ক্যাটাগরি পেজে বাংলা সংখ্যা পদ্ধতির দরকে স্ট্রিং হিসেবে নয়, বরং প্রকৃত গাণিতিক মানের ওপর ভিত্তি করে দাম কম থেকে বেশি এবং বেশি থেকে কম ক্রমে নির্ভুলভাবে সাজানো যায়।
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **নিরাপদ রুট ও অথেনটিকেশন মিডলওয়্যার:**
+   BetterAuth ও Next.js Middleware ব্যবহার করে পণ্যের বিস্তারিত রুট (`/product/[slug]`) এবং প্রোফাইল সেকশনকে সম্পূর্ণ সুরক্ষিত রাখা হয়েছে, যাতে অননুমোদিত প্রবেশ রোধ করা যায়।
 
-## Deploy on Vercel
+5. **ব্যবহারকারীর তথ্য হালনাগাদ (Challenge C3):**
+   প্রোফাইল পেজে ব্যবহারকারী নিজের নাম সরাসরি ফর্মের মাধ্যমে এডিট করতে পারেন, যা BetterAuth-এর `updateUser` ক্লায়েন্ট মেথডের মাধ্যমে তাৎক্ষণিক সেভ হয়।
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 💻 স্থানীয়ভাবে রান করার নিয়মাবলী (Local Setup)
+
+1. **ক্লোন করুন:**
+   ```bash
+   git clone [https://github.com/your-username/bazardor.git](https://github.com/your-username/bazardor.git)
+   cd bazardor
+   ```

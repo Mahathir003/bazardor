@@ -1,19 +1,24 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, use } from "react";
 import Link from "next/link";
 import productsData from "@/data/products.json";
 import ProductCard from "@/components/ProductCard";
 import { toBengaliNumber } from "@/lib/bangla-utils";
 
-export default function CategoryPage({ params }: { params: { slug: string } }) {
+export default function CategoryPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = use(params);
   const [sortOrder, setSortOrder] = useState<"default" | "asc" | "desc">(
     "default",
   );
 
   const categoryProducts = useMemo(() => {
-    return productsData.filter((p) => p.categorySlug === params.slug);
-  }, [params.slug]);
+    return productsData.filter((p) => p.categorySlug === slug);
+  }, [slug]);
 
   // C1: Numeric value sorting (not alphabetical or string sorting)
   const sortedProducts = useMemo(() => {

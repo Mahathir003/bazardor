@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import PriceTicker from "@/components/PriceTicker";
@@ -21,7 +22,13 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col justify-between antialiased">
         <Toaster position="top-right" />
         <div>
-          <Navbar />
+          <Suspense
+            fallback={
+              <div className="h-20 bg-white border-b border-gray-100" />
+            }
+          >
+            <Navbar />
+          </Suspense>
           <PriceTicker />
           <main className="py-6">{children}</main>
         </div>
