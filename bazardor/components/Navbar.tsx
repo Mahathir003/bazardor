@@ -35,9 +35,7 @@ export default function Navbar() {
 
   return (
     <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
-      {/* Top Navbar Row */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
-        {/* Brand Logo & Bangla Date */}
         <Link href="/" className="flex items-center gap-3">
           <div className="w-10 h-10 bg-[#007a3d] rounded-xl flex items-center justify-center text-white shadow-sm">
             <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -54,7 +52,6 @@ export default function Navbar() {
           </div>
         </Link>
 
-        {/* Right Auth controls */}
         <div className="relative">
           {session ? (
             <div>
@@ -79,7 +76,6 @@ export default function Navbar() {
                 <span className="text-xs text-gray-400">▾</span>
               </button>
 
-              {/* User Dropdown matching screenshot */}
               {dropdownOpen && (
                 <div className="absolute right-0 mt-2 w-56 bg-white rounded-2xl shadow-xl border border-gray-100 p-4 z-50">
                   <div className="pb-3 border-b border-gray-100">
@@ -127,7 +123,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Row 2: Category Pill Links */}
       <div className="border-t border-gray-100 py-2.5">
         <div className="max-w-7xl mx-auto px-4 flex justify-center items-center gap-3 sm:gap-6 overflow-x-auto text-xs sm:text-sm font-medium">
           {categories.map((cat) => {
