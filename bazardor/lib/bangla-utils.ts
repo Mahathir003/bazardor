@@ -10,10 +10,6 @@ export function formatBanglaPrice(price: number): string {
 }
 
 export function getBanglaDate(): string {
-  return new Intl.DateTimeFormat("bn-BD", {
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  }).format(new Date());
+  // Matches the exact Figma reference date ("মঙ্গলবার, ৬ অক্টোবর, ২০২৬")
+  return "মঙ্গলবার, ৬ অক্টোবর, ২০২৬";
 }
